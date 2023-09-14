@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+.background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1; 
+}
+
+.converter {
+    background: linear-gradient(45deg, rgb(185, 96, 96), rgb(255, 191, 191));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+button {
+    background: linear-gradient(45deg, #04942f, #6fbde4);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    width: 250px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
